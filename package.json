@@ -1,0 +1,15 @@
+{
+  "name": "campusconnect-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered placement preparation portal for college students.",
+  "scripts": {
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "install:all": "npm install && npm --prefix client install && npm --prefix server install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
